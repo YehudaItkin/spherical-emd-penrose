@@ -61,3 +61,14 @@ the cofactors p₁₆, p₂₀ on (0, ∞) by Sturm's theorem, and the all-nonne
 
 A preprint is posted on Research Square. Please cite the manuscript; a BibTeX entry will be added here
 once a DOI is assigned.
+
+## License
+
+This repository is dual-licensed:
+
+- **Manuscript** — the paper text and figures (`spherical_emd_penrose.tex`, `spherical_emd_penrose.pdf`) are
+  licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](LICENSE-CC-BY-4.0.txt).
+- **Code** — the supplementary scripts (`supplementary/`, including `verify.py`) are licensed under the
+  [MIT License](LICENSE).
+
+© 2026 Igor Itkin.
