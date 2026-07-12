@@ -2,7 +2,7 @@
 
 Source, manuscript, and machine-verifiable supplementary material for the paper
 
-> **The spherically symmetric Einstein–Maxwell–dilaton Penrose inequality at α = 1, and the redundancy of the charge–horizon hypothesis**
+> **The spherically symmetric Einstein–Maxwell–dilaton Penrose inequality at α = 1**
 > Igor Itkin (independent researcher, [ig.itkin@gmail.com](mailto:ig.itkin@gmail.com))
 
 ## Summary
