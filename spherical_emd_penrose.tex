@@ -87,9 +87,9 @@ $2M\ge\sqrt{\rH^2+2q^2}$, with equality if and only if the data is GHS.
 \end{conjecture}
 
 The difficulty is that the sharp right-hand side is Pythagorean in $(\rH,q)$, whereas the classical routes to
-mass lower bounds in this setting---the Witten--Nester spinor identities, which give the positive mass theorem
+mass lower bounds in this setting (the Witten--Nester spinor identities, which give the positive mass theorem
 with charge $M\ge|q|/\sqrt2$ \cite{Nozawa,Rogatko,NozawaShiromizu}, and static uniqueness at $\alpha=1$
-\cite{MarsSimon}---produce an \emph{additive} boundary term of the form $q/\sqrt2+\rH/2$. That additive term
+\cite{MarsSimon}) produce an \emph{additive} boundary term of the form $q/\sqrt2+\rH/2$. That additive term
 cannot reproduce $\sqrt{\rH^2+2q^2}$ except near equality (it exceeds it by a triangle-inequality defect),
 so these methods bound or rigidify the mass without yielding a Penrose inequality, and the sharp bound has
 remained open.
@@ -117,9 +117,9 @@ whose ADM mass is arbitrarily close to $\rH/2$. Hence once $\operatorname{div}(e
 bound $B(\rH,q)>\rH/2$ holds; in particular $\tfrac12\sqrt{\rH^2+2q^2}$ fails.
 \end{theorem}
 
-By contrast, a \emph{further} side condition often attached to charged Penrose inequalities---the
+By contrast, a \emph{further} side condition often attached to charged Penrose inequalities (the
 sub-extremality bound $\rH\ge q$, imposed in the Einstein--Maxwell case to exclude over-charged data
-\cite{DisconziKhuri,KWY,McCormick}---turns out to be unnecessary here.
+\cite{DisconziKhuri,KWY,McCormick}) turns out to be unnecessary here.
 
 \begin{proposition}[Redundancy of $\rH\ge q$]\label{prop:redundant}
 The proof of Theorem~\ref{thm:main} uses no upper bound on $\sigma_H:=\sqrt{1+2q^2/\rH^2}$. Consequently
@@ -165,6 +165,9 @@ Proposition~\ref{prop:redundant}, and Section~\ref{sec:rational} gives a second,
 rational mass.
 
 \section{Setup and the GHS solution}\label{sec:setup}
+
+This section fixes the initial-data class, writes the dominant energy condition as the single scalar constraint
+used in the proof, and records the GHS solution that saturates the bound.
 
 \subsection{Initial data}\label{sec:data}
 
@@ -261,6 +264,9 @@ uniform in the charge-to-radius ratio, so the sub-extremality hypothesis $\rH\ge
 bound with a radical-free rational mass, which checks the first.
 
 \section{The monotone quasilocal mass}\label{sec:mass}
+
+We now carry out the proof of Theorem~\ref{thm:main} along the plan of Section~\ref{sec:outline}, constructing
+the mass and establishing in turn its flow identity, the two leaf inequalities, the endpoint values, and rigidity.
 
 \subsection{Definition of the mass}\label{sec:massdef}
 
@@ -392,10 +398,10 @@ positivity \cite{PowersReznick,Polya}: a polynomial written in the Bernstein bas
 $B_{n,j}(u)=\binom{n}{j}u^j(1-u)^{n-j}$ over $[0,1]$ is nonnegative there as soon as all its Bernstein
 coefficients $b_j(t)$ are nonnegative on $t>0$, since the basis is itself nonnegative. Rewriting each $P_k,Q_k$
 in this basis produces the one-variable coefficient family $\{b_j(t)\}$; each $b_j(t)$ is certified nonnegative
-on $(0,\infty)$ in exact integer arithmetic---immediately whenever its $t$-coefficients are all nonnegative,
+on $(0,\infty)$ in exact integer arithmetic: immediately whenever its $t$-coefficients are all nonnegative,
 and otherwise by a Sturm root-count (no real root in $(0,\infty)$, together with a positive value at $t=1$).
 (The companion positivity of the $H_u$ numerator in Section~\ref{sec:Hu} is certified the same way, after
-splitting the $t$-axis into the charts $\{0<t\le1\}$ and $\{t\ge1\}$---the latter via $t\mapsto1/t$---so that
+splitting the $t$-axis into the charts $\{0<t\le1\}$ and $\{t\ge1\}$ (the latter via $t\mapsto1/t$) so that
 each $b_j$ lies on a bounded interval.) Hence $P_k,Q_k\ge0$, so $C\ge0$ by
 \eqref{eq:Cexp}, and $\Disc\le0$ by \eqref{eq:signreduce}, with equality if and only if $W=1$, i.e.\ on GHS.
 This proves Lemma~\ref{lem:psd}. \qed
@@ -463,7 +469,7 @@ Theorem~\ref{thm:main}.
 
 \subsection{The condition and its redundancy}\label{sec:subext}
 
-The source-free and connected-outermost hypotheses of Theorem~\ref{thm:main} are necessary---Section~\ref{sec:false}
+The source-free and connected-outermost hypotheses of Theorem~\ref{thm:main} are necessary; Section~\ref{sec:false}
 shows what their absence costs. A \emph{further} side condition is often attached to charged Penrose
 inequalities, by analogy with the Einstein--Maxwell case, where over-charged data can violate the bound and a
 sub-extremality assumption is imposed \cite{DisconziKhuri,KWY,McCormick}; in the present setting it reads
@@ -515,14 +521,14 @@ never needs the regime.
 
 The mass $\Hbr$ of Section~\ref{sec:mass} carries the nested radical $W=\sqrt R$, whose positivity forced the
 uniformization of Section~\ref{sec:disc}. We now give a second, independent proof of Theorem~\ref{thm:main},
-using a different monotone mass---rational in $(t,u,\sigma)$, with no radical. Its monotonicity certificate is a
+using a different monotone mass, rational in $(t,u,\sigma)$, with no radical. Its monotonicity certificate is a
 direct Bernstein positivity, needing no uniformization. Because one mass carries a radical and the other is
 rational, their agreement is a strong check against computational error.
 
 \subsection{Construction}\label{sec:ratconstruct}
 
-We build the mass by interpolating its profile in the leaf variable $u$ between two distinguished leaves---the
-horizon $u=1$ and the GHS locus---with data fixed so that $G$ reproduces the GHS mass. The interpolant is a
+We build the mass by interpolating its profile in the leaf variable $u$ between two distinguished leaves (the
+horizon $u=1$ and the GHS locus) with data fixed so that $G$ reproduces the GHS mass. The interpolant is a
 rational function of $(t,u,\sigma)$, so no radical enters.
 
 The interpolation data comes from two quantities. The $u$-linear part of the radical mass $\Hbr$ is
@@ -539,8 +545,8 @@ auxiliary rational function $k$ these are
 \begin{equation}\label{eq:kb}
    k=\frac{2t^2(\sigma+t)}{(t^2+1)^2(\sigma t+1)},\qquad b=\frac{t}{t^2+1}.
 \end{equation}
-Hermite interpolation in $u$---matching the horizon value $\tfrac\sigma2$ at $u=1$ and the locus data
-$(\widehat m,b)$ at $u=u_G$---gives a base interpolant $\widehat G_4$. A single rational correction completes it
+Hermite interpolation in $u$ (matching the horizon value $\tfrac\sigma2$ at $u=1$ and the locus data
+$(\widehat m,b)$ at $u=u_G$) gives a base interpolant $\widehat G_4$. A single rational correction completes it
 to the mass profile $\widehat G_9$, whose monotonicity is certified in Section~\ref{sec:ratcert}:
 \begin{equation}\label{eq:Ghat9}
    \widehat G_4=\tfrac\sigma2+(u-1)(2k-b)-(u-1)^2\,\frac{b-k}{1-u_G},\qquad
@@ -578,7 +584,7 @@ $\mathcal P^2\ge0$ on $\mathcal D$, the two monotonicity conditions reduce to th
 \begin{equation}\label{eq:B9M9pos}
    B_9\ge0\quad\text{and}\quad M_9\ge0\qquad\text{on }\mathcal D .
 \end{equation}
-Both inequalities are low-degree in $u$---$B_9$ is quadratic, $M_9$ cubic---so expanding each in the Bernstein
+Both inequalities are low-degree in $u$ ($B_9$ is quadratic, $M_9$ cubic), so expanding each in the Bernstein
 basis $B_{n,k}(u)=\binom nk u^k(1-u)^{n-k}$ over $[0,1]$ leaves only its Bernstein coefficients, polynomials in
 $(t,\sigma)$; since $B_{n,k}\ge0$ on $[0,1]$, nonnegativity of every coefficient gives the inequality on
 $\mathcal D$.
@@ -617,7 +623,7 @@ We have proved the spherically symmetric Einstein--Maxwell--dilaton Penrose ineq
 and Yamada, with GHS rigidity. We have shown that the divergence-free hypothesis on the Maxwell field is
 necessary (Theorem~\ref{thm:nogo}), whereas the sub-extremality condition $\rH\ge q$ is redundant
 (Proposition~\ref{prop:redundant}). The bound is proved twice, by two monotone masses of different algebraic
-type---the radical Hawking--Bray mass and the rational mass of Section~\ref{sec:rational}---so that each proof
+type (the radical Hawking--Bray mass and the rational mass of Section~\ref{sec:rational}), so that each proof
 checks the other.
 
 For non-spherical data the analogous monotonicity is open and is pursued elsewhere; the current evidence is a
@@ -630,9 +636,9 @@ here is the spherically symmetric case of a conjecture of G.~Weinstein with M.~K
 \cite{KWYext}. The proof, and any errors or inaccuracies it may contain, are the author's sole responsibility.
 
 \section*{Data availability}
-The manuscript source and a machine-verifiable supplementary bundle---a \texttt{sympy} script that re-derives, in
+The manuscript source and a machine-verifiable supplementary bundle (a \texttt{sympy} script that re-derives, in
 exact rational arithmetic, every algebraic claim of Section~\ref{sec:ratcert} and Appendix~\ref{app:sos},
-together with the polynomials $B_9,M_9$ and the Handelman certificate for $M_9$---are available at
+together with the polynomials $B_9,M_9$ and the Handelman certificate for $M_9$) are available at
 \url{https://github.com/YehudaItkin/spherical-emd-penrose}.
 
 \appendix
@@ -653,7 +659,7 @@ in $(0,\infty)$; since the values $p_{16}(1)=3072$ and $p_{20}(1)=8192$ are posi
 on the whole of $(0,\infty)$. The root count is exact, in integer arithmetic.
 
 The only object in the proof too large to print is the identity \eqref{eq:handelman}, which writes
-$(1+t)^8M_9$---the $472$ monomials of $M_9$ cleared by $(1+t)^8$---as a sum of $1844$ nonnegative terms; these
+$(1+t)^8M_9$ (the $472$ monomials of $M_9$ cleared by $(1+t)^8$) as a sum of $1844$ nonnegative terms; these
 are provided as an ancillary file and were generated and checked in Wolfram Language.
 Every identity and positivity statement in Section~\ref{sec:ratcert} and here is exact over $\mathbb Q$, and the
 two inequalities $B_9,M_9\ge0$ are independently reconfirmed on $\mathcal D$ by cylindrical algebraic
