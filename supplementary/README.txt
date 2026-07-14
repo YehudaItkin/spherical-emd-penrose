@@ -1,7 +1,7 @@
 Supplementary material for
 
-    "The spherically symmetric Einstein-Maxwell-dilaton Penrose inequality
-     at alpha=1, and the redundancy of the charge-horizon hypothesis"
+    "Proof of the Einstein-Maxwell-dilaton Penrose inequality in spherical
+     symmetry at alpha=1"
     Igor Itkin  (ig.itkin@gmail.com)
 
 This bundle supports the second, radical-free proof (Section 7) and Appendix A.

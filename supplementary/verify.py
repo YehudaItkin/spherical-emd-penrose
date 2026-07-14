@@ -2,8 +2,8 @@
 """
 Supplementary verification for
 
-    "The spherically symmetric Einstein-Maxwell-dilaton Penrose inequality
-     at alpha=1, and the redundancy of the charge-horizon hypothesis"
+    "Proof of the Einstein-Maxwell-dilaton Penrose inequality in spherical
+     symmetry at alpha=1"
     (Igor Itkin).
 
 This script re-derives, in EXACT rational arithmetic (sympy), every algebraic

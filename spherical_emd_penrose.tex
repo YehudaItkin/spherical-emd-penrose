@@ -26,7 +26,7 @@
 \newcommand{\eps}{\varepsilon}
 \DeclareMathOperator{\Ric}{Ric}
 
-\title{The spherically symmetric Einstein--Maxwell--dilaton\\ Penrose inequality at $\alpha=1$}
+\title{Proof of the Einstein--Maxwell--dilaton Penrose inequality\\ in spherical symmetry at $\alpha=1$}
 \author{Igor Itkin\\[2pt] Independent researcher\\ \texttt{ig.itkin@gmail.com}}
 \date{\today}
 
@@ -53,11 +53,14 @@ mass.
 \noindent\textbf{Keywords:} Penrose inequality; Einstein--Maxwell--dilaton; dilaton black hole; quasilocal mass;
 spherical symmetry.
 
+\smallskip\noindent\textbf{Mathematics Subject Classification (2020):}
+83C57 (Primary); 83C22, 53C80, 26C10 (Secondary).
+
 \section{Introduction}\label{sec:intro}
 
 The Penrose inequality asserts that the total mass $M$ of an asymptotically flat spacetime is bounded below by
 the area $A$ of its outermost horizon, $2M\ge\sqrt{A/4\pi}$; it is a sharpened, quantitative form of the
-cosmic censorship conjecture \cite{Penrose}. In the time-symmetric (Riemannian) case it was proved by Huisken
+cosmic censorship conjecture \cite{Penrose69,Penrose}. In the time-symmetric (Riemannian) case it was proved by Huisken
 and Ilmanen \cite{HuiskenIlmanen} for a single horizon and by Bray \cite{Bray} for several, in each case with
 equality only for the Schwarzschild slice. When the matter carries electric charge $q$, a sharp charge-dependent
 refinement is expected, saturated by the Reissner--Nordstr\"om solution, and it has been established under a
@@ -139,7 +142,7 @@ Theorem~\ref{thm:main}.
 
 \begin{remark}[The right-hand side is coupling-dependent]\label{rmk:genalpha}
 The form $\sqrt{\rH^2+2q^2}$ is special to $\alpha=1$: already on the GHS family it fails for $\alpha>1$ (for
-instance $\alpha=2$). The correct sharp per-coupling bound is the GHS-calibrated
+instance $\alpha=2$). The correct sharp per-coupling bound is given by the GHS-calibrated
 $B_\alpha(\rH,q)$ read off the GHS mass--radius relation, of which $\tfrac12\sqrt{\rH^2+2q^2}$ is the
 $\alpha=1$ case. The present paper treats $\alpha=1$.
 \end{remark}
@@ -154,6 +157,18 @@ inequality for weighted manifolds \cite{McCormickWeighted} (uncharged, with a we
 equality case); neither covers the charged EMD bound. Nozawa, Shiromizu, Izumi and Yamada \cite{NSIY} obtain a
 Penrose-\emph{type} inequality in the EMD system through the divergence/positive-mass route, but not the sharp
 $2M\ge\sqrt{\rH^2+2q^2}$ with GHS rigidity established here.
+
+The Penrose inequality and the methods behind it are surveyed in \cite{Mars}, and the Riemannian theory is
+developed systematically in \cite{LeeBook}. The monotone quasilocal mass used below descends from Geroch's
+energy-extraction argument \cite{Geroch}, turned into a route to the Penrose inequality by Jang and Wald
+\cite{JangWald} and made rigorous through inverse mean curvature flow \cite{HuiskenIlmanen} and Bray's conformal
+flow \cite{Bray} (the latter extended below dimension eight in \cite{BrayLee}); the general, non-time-symmetric
+conjecture is approached via the Jang equation by Bray and Khuri \cite{BrayKhuri}. The underlying mass--charge
+positivity $M\ge|q|$ for black holes rests on the positive mass theorem \cite{SchoenYau,Witten} and its charged
+black-hole form \cite{GHHP}, and a quasilocal charged Penrose inequality is established by Chen and McCormick
+\cite{ChenMcCormick}; equality and rigidity for the relevant static black holes are governed by harmonic-map
+uniqueness \cite{Weinstein,MarsSimon}. Against this background the sharp EMD bound with GHS rigidity proved here
+appears to be new.
 
 The paper is organized as follows. Section~\ref{sec:setup} fixes the data and the GHS solution, and
 Section~\ref{sec:false} proves Theorem~\ref{thm:nogo}. Section~\ref{sec:outline} outlines the strategy for
@@ -505,10 +520,10 @@ $\rH=1,\,q=2,\,\sigma_H=3$ gives $2M=3.05$ against $\sqrt{\rH^2+2q^2}=3.00$, a m
 \begin{remark}[Why $\rH\ge q$ is nonetheless quoted]\label{rmk:spinor}
 The condition \eqref{eq:regime} is load-bearing for the spinorial (Witten-type) proof, not for the present
 quasilocal-flow proof. As noted in Section~\ref{sec:intro}, the spinor route produces an additive boundary
-term $\sim q/\sqrt2+\rH/2$, which cannot reproduce the Pythagorean $\sqrt{\rH^2+2q^2}$ except near equality; the
+term $\sim q/\sqrt2+\rH/2$, which cannot reproduce the Pythagorean $\sqrt{\rH^2+2q^2}$ except near equality. The
 gap is a triangle-inequality defect controlled precisely by $\sigma_H\le\sqrt3$. The condition was a feature
 of that method, mistaken for a feature of the theorem. Separately, the value $\sigma=\sqrt3$ once appeared as an
-apparent threshold in a closed-form expression for the partials of $\Hbr$; that threshold was an artifact of
+apparent threshold in a closed-form expression for the partials of $\Hbr$. That threshold was an artifact of
 differentiating at fixed $W$ rather than along $W=\sqrt R$, and with the chain term restored it disappears, so
 $H_u>0$ holds unconditionally (Section~\ref{sec:Hu}). The flow proof never forms the additive quantity and
 never needs the regime.
@@ -643,7 +658,7 @@ exact rational arithmetic, every algebraic claim of Section~\ref{sec:ratcert} an
 together with the polynomials $B_9,M_9$ and the Handelman certificate for $M_9$) are available at
 \url{https://github.com/YehudaItkin/spherical-emd-penrose}.
 
-\begin{thebibliography}{20}
+\begin{thebibliography}{32}
 \bibitem{Penrose} Penrose R 1973 Naked singularities \emph{Ann. New York Acad. Sci.} \textbf{224} 125--134
 \bibitem{MisnerSharp} Misner C W and Sharp D H 1964 Relativistic equations for adiabatic, spherically
   symmetric gravitational collapse \emph{Phys. Rev.} \textbf{136} B571--B576
@@ -683,6 +698,30 @@ together with the polynomials $B_9,M_9$ and the Handelman certificate for $M_9$)
   Ges. Z\"urich} \textbf{73} 141--145
 \bibitem{BasuPollackRoy} Basu S, Pollack R and Roy M-F 2006 \emph{Algorithms in Real Algebraic Geometry}
   (Algorithms and Computation in Mathematics vol 10) 2nd edn (Berlin: Springer)
+\bibitem{Penrose69} Penrose R 1969 Gravitational collapse: the role of general relativity
+  \emph{Riv. Nuovo Cimento} \textbf{1} 252--276 (reprinted 2002 \emph{Gen. Relativ. Gravit.} \textbf{34} 1141--1165)
+\bibitem{Mars} Mars M 2009 Present status of the Penrose inequality \emph{Class. Quantum Grav.} \textbf{26}
+  193001 (\emph{Preprint} arXiv:0906.5566)
+\bibitem{LeeBook} Lee D A 2019 \emph{Geometric Relativity} (Graduate Studies in Mathematics vol 201)
+  (Providence, RI: American Mathematical Society)
+\bibitem{Geroch} Geroch R 1973 Energy extraction \emph{Ann. New York Acad. Sci.} \textbf{224} 108--117
+\bibitem{JangWald} Jang P S and Wald R M 1977 The positive energy conjecture and the cosmic censor hypothesis
+  \emph{J. Math. Phys.} \textbf{18} 41--44
+\bibitem{SchoenYau} Schoen R and Yau S-T 1979 On the proof of the positive mass conjecture in general
+  relativity \emph{Commun. Math. Phys.} \textbf{65} 45--76
+\bibitem{Witten} Witten E 1981 A new proof of the positive energy theorem \emph{Commun. Math. Phys.}
+  \textbf{80} 381--402
+\bibitem{GHHP} Gibbons G W, Hawking S W, Horowitz G T and Perry M J 1983 Positive mass theorems for black
+  holes \emph{Commun. Math. Phys.} \textbf{88} 295--308
+\bibitem{ChenMcCormick} Chen P-N and McCormick S 2022 Quasi-local Penrose inequalities with electric charge
+  \emph{Int. Math. Res. Not. IMRN} \textbf{2022} 17333--17362 (\emph{Preprint} arXiv:2002.04557)
+\bibitem{BrayKhuri} Bray H L and Khuri M A 2010 A Jang equation approach to the Penrose inequality
+  \emph{Discrete Contin. Dyn. Syst.} \textbf{27} 741--766 (\emph{Preprint} arXiv:0910.4785)
+\bibitem{BrayLee} Bray H L and Lee D A 2009 On the Riemannian Penrose inequality in dimensions less than eight
+  \emph{Duke Math. J.} \textbf{148} 81--106 (\emph{Preprint} arXiv:0705.1128)
+\bibitem{Weinstein} Weinstein G 1996 $N$-black-hole stationary and axially symmetric solutions of the
+  Einstein--Maxwell equations \emph{Commun. Partial Differ. Equ.} \textbf{21} 1389--1430
+  (\emph{Preprint} arXiv:gr-qc/9412036)
 \end{thebibliography}
 
 \appendix
