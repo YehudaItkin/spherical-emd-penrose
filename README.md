@@ -15,8 +15,10 @@ $$2M \ge \sqrt{\rho_H^2 + 2q^2},$$
 conjectured by Khuri, Weinstein and Yamada, for static, spherically symmetric, time-symmetric data
 satisfying the dominant energy condition, with equality if and only if the data is the
 Gibbons–Maeda / Garfinkle–Horowitz–Strominger (GHS) black hole. The paper also shows that the
-divergence-free (source-free) hypothesis on the Maxwell field is *necessary*, while the
-sub-extremality condition ρ_H ≥ q usually attached to charged Penrose inequalities is *redundant* here.
+divergence-free (source-free) hypothesis on the Maxwell field is *necessary* — transcribing
+McCormick's Einstein–Maxwell counterexample to EMD, where the dilaton weight cancels by Gauss's law —
+while the sub-extremality condition ρ_H ≥ q usually attached to charged Penrose inequalities is
+*redundant* here.
 
 The bound is proved twice, by two monotone quasilocal masses of different algebraic type — a radical
 Hawking–Bray mass (Section 5) and a radical-free rational mass (Section 7) — so each proof checks the

@@ -39,14 +39,14 @@ Einstein--Maxwell--dilaton (EMD) system at dilaton coupling $\alpha=1$, Khuri, W
 \cite{KWYext} conjectured the sharp bound $2M\ge\sqrt{\rH^2+2q^2}$, with $M$ the ADM mass, $\rH$ the horizon
 area radius and $q$ the charge, saturated by the Gibbons--Maeda / Garfinkle--Horowitz--Strominger (GHS) black
 hole; the available positive-mass and spinorial methods reach only an additive charge term, not this
-Pythagorean form. We prove the conjecture for static, spherically symmetric, time-symmetric data satisfying the
-dominant energy condition, with equality if and only if the data is GHS. The proof uses a quasilocal mass that
+Pythagorean form. We prove the conjecture, in its divergence-free form, for static, spherically symmetric,
+time-symmetric data satisfying the dominant energy condition, with equality if and only if the data is GHS. The proof uses a quasilocal mass that
 is nondecreasing along the area-radius foliation, equals $\tfrac12\sqrt{\rH^2+2q^2}$ at the horizon and tends
-to $M$ at infinity; its monotonicity reduces to a polynomial positivity certificate verified in exact
-arithmetic. We show in addition that the divergence-free hypothesis $\operatorname{div}(e^{-2\phi}E)=0$ on the
-Maxwell field is necessary, whereas the sub-extremality condition $\rH\ge q$ often imposed on charged Penrose
-inequalities is redundant here, and we give a second, independent proof of the bound by a radical-free rational
-mass.
+to $M$ at infinity; its monotonicity reduces to a polynomial positivity certificate. We show in addition that the divergence-free hypothesis $\operatorname{div}(e^{-2\phi}E)=0$ on the
+Maxwell field is necessary --- transcribing McCormick's Einstein--Maxwell counterexample \cite{McCormick} to
+EMD, where the dilaton weight cancels by Gauss's law --- whereas the sub-extremality condition $\rH\ge q$ often
+imposed on charged Penrose inequalities is redundant here, and we give a second, independent proof of the bound
+by a radical-free rational mass whose positivity certificate is verified in exact rational arithmetic.
 \end{abstract}
 
 \medskip
@@ -75,11 +75,20 @@ it saturates the \emph{Pythagorean} bound
 \begin{equation*}
   2M\ \ge\ \sqrt{\rH^2+2q^2}.
 \end{equation*}
-Khuri, Weinstein and Yamada \cite{KWYext} conjectured that this bound holds for all admissible EMD data, under
-a divergence-free hypothesis on the Maxwell field. The problem we solve is exactly their conjecture in
-spherical symmetry.
+Khuri, Weinstein and Yamada \cite[Conjecture 1.7]{KWYext} conjectured that this bound holds for all EMD data
+whose charge densities are compactly supported, with the Gibbons black hole \cite{Gibbons82} (the $\alpha=1$
+member of the Gibbons--Maeda family, i.e.\ GHS) as the equality case when the fields are divergence-free. The
+problem we solve is their conjecture in spherical symmetry.
 
-\begin{conjecture}[Khuri--Weinstein--Yamada \cite{KWYext}]\label{conj:posed}
+One hypothesis needs care before it can be proved. As stated, compact support of the charge densities is not
+enough: the bound then fails by an arbitrary factor, because a charge screened from the horizon by a distant
+shell contributes to the asymptotic $q$ but not to the mass. McCormick \cite[Theorem 3.3]{McCormick}
+established this for the Einstein--Maxwell case $\alpha=0$, and showed that a pointwise condition tying the
+matter density to the charge density restores the inequality; Section~\ref{sec:false} transcribes his
+construction to EMD, where it applies verbatim. The divergence-free hypothesis excludes exactly this
+configuration, and it is the form we prove.
+
+\begin{conjecture}[Khuri--Weinstein--Yamada \cite{KWYext}, divergence-free form]\label{conj:posed}
 Let the static, spherically symmetric EMD data of Section~\textup{\ref{sec:setup}} at coupling $\alpha=1$
 satisfy the dominant energy condition, with a connected outermost minimal-surface horizon of area radius
 $\rH$, conserved charge $q$, and $\operatorname{div}(e^{-2\phi}E)=0$ outside the horizon. Then
@@ -87,8 +96,8 @@ $2M\ge\sqrt{\rH^2+2q^2}$, with equality if and only if the data is GHS.
 \end{conjecture}
 
 The difficulty is that the sharp right-hand side is Pythagorean in $(\rH,q)$, whereas the classical routes to
-mass lower bounds in this setting (the Witten--Nester spinor identities, which give the positive mass theorem
-with charge $M\ge|q|/\sqrt2$ \cite{Nozawa,Rogatko,NozawaShiromizu}, and static uniqueness at $\alpha=1$
+mass lower bounds in this setting (the Witten--Nester spinor identities \cite{Witten}, which give the positive
+mass theorem with charge $M\ge|q|/\sqrt2$ \cite{GKLTT,Nozawa,Rogatko,NozawaShiromizu}, and static uniqueness at $\alpha=1$
 \cite{MarsSimon}) produce an \emph{additive} boundary term of the form $q/\sqrt2+\rH/2$. That additive term
 cannot reproduce $\sqrt{\rH^2+2q^2}$ except near equality (it exceeds it by a triangle-inequality defect),
 so these methods bound or rigidify the mass without yielding a Penrose inequality, and the sharp bound has
@@ -108,14 +117,17 @@ with equality if and only if the data is the GHS black hole \eqref{eq:ghs}.
 \end{theorem}
 
 The source-free hypothesis is not a technical convenience but a genuine requirement, and Section~\ref{sec:false}
-shows precisely what its absence costs.
+shows precisely what its absence costs. The mechanism is the one McCormick \cite{McCormick} identified for the
+Einstein--Maxwell case $\alpha=0$: a charge screened from the horizon by a distant shell inflates the
+asymptotic charge without adding mass. It transcribes to EMD unchanged --- the dilaton weight cancels from the
+screening cost by Gauss's law --- so the following is McCormick's construction carried to $\alpha=1$.
 
-\begin{theorem}[Necessity of the source-free hypothesis]\label{thm:nogo}
+\begin{proposition}[Necessity of the source-free hypothesis; after McCormick \cite{McCormick}]\label{thm:nogo}
 For every $\rH>0$ and every $q\neq0$ there is admissible static, spherically symmetric, DEC EMD datum,
 carrying an interior charge source, with outermost horizon of area radius $\rH$ and conserved charge $q$,
 whose ADM mass is arbitrarily close to $\rH/2$. Hence once $\operatorname{div}(e^{-2\phi}E)=0$ is dropped, no
 bound $B(\rH,q)>\rH/2$ holds; in particular $\tfrac12\sqrt{\rH^2+2q^2}$ fails.
-\end{theorem}
+\end{proposition}
 
 By contrast, a \emph{further} side condition often attached to charged Penrose inequalities (the
 sub-extremality bound $\rH\ge q$, imposed in the Einstein--Maxwell case to exclude over-charged data
@@ -131,6 +143,11 @@ Finally, we prove the bound twice, by two monotone masses of different algebraic
 mass used for Theorem~\ref{thm:main}, whose one nested radical is removed by uniformization, and a
 \emph{rational}, radical-free mass built by Hermite interpolation on the GHS locus (Section~\ref{sec:rational}).
 Because one mass carries a radical and the other is rational, the second proof is an independent check on the first.
+The rational route is the one we ship as a machine-verifiable certificate: because it carries no radical, its
+positivity is decided over $\mathbb Z$ by the Bernstein/Sturm/Handelman argument of Section~\ref{sec:rational}
+and Appendix~\ref{app:sos}, reproduced in exact rational arithmetic by the supplementary script. Either proof
+establishes Theorem~\ref{thm:main}; the radical route is the more direct conceptually, the rational route the
+one a reader can rerun end to end.
 
 \begin{remark}[The uncharged case, for every $\alpha$]\label{rmk:q0}
 At $q=0$ there is no Maxwell field, the dilaton is harmonic, and the DEC reduces to
@@ -171,7 +188,7 @@ uniqueness \cite{Weinstein,MarsSimon}. Against this background the sharp EMD bou
 appears to be new.
 
 The paper is organized as follows. Section~\ref{sec:setup} fixes the data and the GHS solution, and
-Section~\ref{sec:false} proves Theorem~\ref{thm:nogo}. Section~\ref{sec:outline} outlines the strategy for
+Section~\ref{sec:false} proves Proposition~\ref{thm:nogo}. Section~\ref{sec:outline} outlines the strategy for
 Theorem~\ref{thm:main}, which is carried out in Section~\ref{sec:mass}. Section~\ref{sec:redundant} proves
 Proposition~\ref{prop:redundant}, and Section~\ref{sec:rational} gives a second, independent proof via a
 rational mass.
@@ -228,9 +245,9 @@ natural sharp form and GHS the expected equality case.
 
 Without the source-free hypothesis the bound of Theorem~\ref{thm:main} fails by an arbitrary factor: the mass
 can be driven down to the uncharged value $\rH/2$ while the charge $q$ is held fixed and made arbitrarily
-large. We prove Theorem~\ref{thm:nogo} by an explicit construction.
+large. We prove Proposition~\ref{thm:nogo} by an explicit construction.
 
-\begin{proof}[Proof of Theorem~\ref{thm:nogo}]
+\begin{proof}[Proof of Proposition~\ref{thm:nogo}]
 Carry the full charge $q$ on a thin dilatonic shell at radius $\rho_s$, with an uncharged interior minimal
 surface of area radius $\rH<\rho_s$. By Gauss' law the horizon then encloses no charge: it is a Schwarzschild
 horizon, and the Riemannian Penrose inequality $m\ge\rH/2$ \cite{HuiskenIlmanen,Bray} is saturated to leading
@@ -304,6 +321,47 @@ This is the charged Hawking--Bray mass. It is rational in $(t,u,\sigma)$ apart f
 constant along the GHS reference flow (Section~\ref{sec:rigidity}) and nondecreasing on every other
 dominant-energy profile, as we now show.
 
+\subsection{Construction of the mass}\label{sec:massconstruct}
+
+Formula \eqref{eq:Hbr} is not postulated; its three summands are produced in turn by three requirements
+---calibration on the GHS reference flow, the horizon endpoint, and leaf positivity---the first two of which
+determine their terms uniquely.
+
+\emph{Step 1: the base term is the calibrated round Hawking mass.} Take the leading part of the mass to be
+linear in the compactness $u$, as a Hawking mass is, $G_0=\rho\,(\alpha(t)+u\,\beta(t))$, and require it to
+reproduce the GHS mass along the whole reference family \eqref{eq:ghs}: $G_0\equiv M=\tfrac12 r_p$. As the
+GHS family is two-parameter, at each fixed $t$ this is two independent linear conditions on $(\alpha,\beta)$,
+and it determines them uniquely,
+\begin{equation}\label{eq:gammaconstruct}
+   \alpha(t)=\frac{(t^2-1)^2}{2t(t^2+1)^2},\qquad
+   \beta(t)=\frac{2t}{(t^2+1)^2},\qquad
+   \gamma:=\alpha+u\beta=\frac{(t^2-1)^2+4u\,t^2}{2t(t^2+1)^2},
+\end{equation}
+the first term of \eqref{eq:Hbr}. At $t=1$ it collapses to $\gamma=u/2$, so $\rho\,\gamma=m$ is exactly the
+round (uncharged) Hawking mass of the leaf; the dilaton dressing in \eqref{eq:gammaconstruct} is what the
+calibration adds.
+
+\emph{Step 2: the reference radical fixes the charge term.} The combination $R$ of \eqref{eq:W} is built so
+that $R\equiv1$ on GHS; hence any correction proportional to $W-1=\sqrt R-1$ vanishes on the reference flow
+and leaves the Step~1 calibration intact. Adding such a term, $\gamma+\tfrac{f}{2t}$, its shape is forced by
+the horizon endpoint: at $u=1$ one has $\kappa=0$, $W=z=\sigma t$, and $\gamma(t,1)=\tfrac1{2t}$, so
+\eqref{eq:Hend} requires $\tfrac1{2t}+\tfrac{f}{2t}=\tfrac{\sigma}{2}$, i.e.\ $f=\sigma t-1=W-1$, the second
+term of \eqref{eq:Hbr}, determined uniquely. Terms one and two already carry the full endpoint and rigidity
+content: they give $\Hbr(t,1,\sigma)=\sigma/2$ and $\Hbr(1,0,1)=0$, keep $G\equiv M$ on GHS, and yield the
+factorisation $\Disc=-(W-1)^2P$ of \eqref{eq:discfac}, with the double root on $W=1$ that rigidity needs.
+
+\emph{Step 3: the positivity completion.} The cofactor $P$ left by the first two terms is, however, not of
+one sign, so $\Disc\le0$ can fail. One removes this by a third correction $-(1-u)(R-1)^2\,\Phi$, with
+$\Phi=2t/[(W+z)(z+1)^2(t^2+1)^2]$, the third term of \eqref{eq:Hbr}. Its two prefactors are structural: the
+$(1-u)$ makes it vanish at the horizon, and $(R-1)^2=(W-1)^2(W+1)^2$ makes it vanish on GHS and preserve the
+double root of Step~2, so it perturbs none of the endpoint, calibration, or rigidity identities. Its sole
+role, and that of the rational factor $\Phi$, is to render the cofactor nonnegative, after which $\Disc\le0$
+carries the certificate of Section~\ref{sec:disc}. Unlike Steps~1--2 this last term is \emph{selected} by
+demanding leaf positivity rather than fixed by a reference value; it is the one fitted, rather than forced,
+ingredient of \eqref{eq:Hbr}. Each identity above (uniqueness of $\gamma$; $R\equiv1$ and $G\equiv M$ on GHS;
+$f=W-1$; the endpoints $\Hbr(1,0,1)=0$, $H_u(1,0,1)=\tfrac12$; and $\Disc=-(W-1)^2P$) is verified in exact
+arithmetic, residual $0$.
+
 \subsection{The flow identity}\label{sec:flow}
 
 Write $H=\Hbr$ and let subscripts denote its partial derivatives. Differentiating $G=\rho\,H$ along the
@@ -334,7 +392,7 @@ $\dd G/\dd\rho\ge0$ reduces to two statements:
 \end{equation}
 
 \begin{lemma}[Monotonicity of $G$]\label{lem:psd}
-On the admissible range $t\in(0,1),\ u\in[0,1),\ \sigma\ge1$ one has $H_u>0$ and $\Disc\le0$, with $\Disc=0$
+On the admissible range $t>0,\ u\in[0,1),\ \sigma\ge1$ one has $H_u>0$ and $\Disc\le0$, with $\Disc=0$
 if and only if $W=1$. Hence by \eqref{eq:flow} every DEC profile satisfies $\dd G/\dd\rho\ge0$.
 \end{lemma}
 
@@ -347,11 +405,12 @@ positive multiple of a rational expression whose denominator is $t\,D_2+\sigma(t
 \[
   D_2=\sigma^2(t^2+1)^2+2(t^2-1)(u-1).
 \]
-Here $D_2>0$ on the whole range: for $t<1$ the term $2(t^2-1)(u-1)$ is a product of two nonpositive factors,
-hence $\ge0$, so $D_2\ge\sigma^2(t^2+1)^2\ge(t^2+1)^2>0$. The
+Here $D_2>0$ on the whole range $t>0$: for $t\le1$ the term $2(t^2-1)(u-1)$ is a product of two nonpositive
+factors, hence $\ge0$, so $D_2\ge\sigma^2(t^2+1)^2>0$; for $t\ge1$ it is bounded below by $-2(t^2-1)$, and
+$\sigma^2(t^2+1)^2\ge(t^2+1)^2>2(t^2-1)$ since $(t^2+1)^2-2(t^2-1)=t^4+3>0$, so again $D_2>0$. The
 numerator is positive on the entire range as well: an exact polynomial positivity, certified by the same
 Bernstein and Sturm argument used for the discriminant cofactor in Section~\ref{sec:disc}. No point of
-$\{t\in(0,1),\,u\in[0,1),\,\sigma\ge1\}$ has $H_u\le0$, so $H_u>0$ unconditionally, for every $\sigma\ge1$
+$\{t>0,\,u\in[0,1),\,\sigma\ge1\}$ has $H_u\le0$, so $H_u>0$ unconditionally, for every $\sigma\ge1$
 with no upper cap; in particular there is no threshold at $\sigma=\sqrt3$ (see Section~\ref{sec:redundant}).
 
 \subsection{Nonpositivity of the discriminant}\label{sec:disc}
@@ -423,7 +482,11 @@ The certificate is exact throughout: the Bernstein reduction and each Sturm root
 are decided over $\mathbb Z$, so it is checkable coefficient by coefficient. Because the radical makes the
 positivity of $\Disc$ inaccessible to any hand or elimination argument in the original variables, the
 uniformization is essential: it removes the radical and reduces the sign question to the polynomial cofactor
-$C$, to which the Bernstein/Sturm certificate applies.
+$C$, to which the Bernstein/Sturm certificate applies. The cofactor $C$ and its coefficient family $P_k,Q_k$
+are large, and we do not print them; the reader who wants a certificate to rerun is directed to the
+radical-free rational proof of Section~\ref{sec:rational}, whose (smaller) polynomials $B_9,M_9$ and their
+nonnegativity certificate are supplied as the machine-verifiable supplementary bundle. That proof establishes
+the same Theorem~\ref{thm:main} independently.
 
 The certificate is also independent of the charge regime. In \eqref{eq:W}--\eqref{eq:uni} the charge variable
 enters $C$ only through $z=\sigma t$, hence through $\xi$; the expansion \eqref{eq:Cexp}--\eqref{eq:signreduce}
@@ -448,11 +511,20 @@ Hence, with $\sigma_H=\sqrt{1+2q^2/\rH^2}$,
 \end{equation}
 which is the right-hand side of Theorem~\ref{thm:main}, valid identically in $\sigma$.
 
-At infinity the data flatten: $t\to1$, $u=2m/\rho\to0$, $\sigma\to1$. One computes $\Hbr(1,0,1)=0$ and
-$H_u(1,0,1)=\tfrac12$, so $\Hbr\simeq H_u\,u=M/\rho$ and
+At infinity the data flatten, with fall-off $u=2m/\rho\to0$ ($u=2M/\rho+o(1/\rho)$), $t-1=e^\phi-1=O(1/\rho)$
+(the dilaton charge), and $\sigma-1=q^2/\rho^2+O(\rho^{-4})=O(1/\rho^2)$. Since $t-1$ is the \emph{same}
+order as $u$, the limit needs the full first-order expansion of $\Hbr$ about $(1,0,1)$,
+\[
+  \Hbr=\Hbr(1,0,1)+H_u(1,0,1)\,u+H_t(1,0,1)\,(t-1)+H_\sigma(1,0,1)\,(\sigma-1)+o(1/\rho).
+\]
+One computes $\Hbr(1,0,1)=0$, $H_u(1,0,1)=\tfrac12$, and --- crucially --- $H_t(1,0,1)=0$, so the
+$O(1/\rho)$ dilaton-charge term drops out and the $H_\sigma$ term is $O(1/\rho^2)$; hence $\rho\,\Hbr\to
+\tfrac12\cdot2M=M$, i.e.
 \begin{equation}\label{eq:Ginf}
   G(\infty)=\lim_{\rho\to\infty}\rho\,\Hbr=M .
 \end{equation}
+Were $H_t(1,0,1)\ne0$, a nonzero dilaton charge would contaminate the ADM mass; the identity
+$H_t(1,0,1)=0$ is what makes $G$ calibrated to $M$ at infinity.
 
 \begin{proof}[Proof of Theorem~\ref{thm:main}]
 Combining the flow identity \eqref{eq:flow}, Lemma~\ref{lem:psd}, and the endpoints \eqref{eq:Gend} and
@@ -466,14 +538,21 @@ The equality statement is proved in Section~\ref{sec:rigidity}.
 
 \subsection{Rigidity}\label{sec:rigidity}
 
-Equality in Theorem~\ref{thm:main} forces $\dd G/\dd\rho\equiv0$, hence $\eps\equiv0$ and the quadratic
-$A_2p^2+A_1p+A_0$ vanishes identically. As $A_2>0$ and $\Disc\le0$, this requires $\Disc=0$ at the double root
-$p=-A_1/(2A_2)$; by \eqref{eq:discfac}, $\Disc=0\Leftrightarrow W=1\Leftrightarrow R=1$. Tracing the locus
-$R=1$ back through \eqref{eq:vars}--\eqref{eq:W} reproduces the GHS relations \eqref{eq:ghs}, along which one
-verifies directly that
-\[
-  R\equiv1,\qquad G=\rho\,\Hbr\equiv\frac{r_p}{2}=M\quad\text{identically in }\rho.
-\]
+Equality in Theorem~\ref{thm:main} forces $\dd G/\dd\rho\equiv0$ at \emph{every} leaf, hence $\eps\equiv0$ and
+the quadratic $A_2p^2+A_1p+A_0$ vanishes identically. As $A_2>0$ and $\Disc\le0$, this requires both
+$\Disc=0$ and that the momentum sit at the double root, so along an equality profile
+\begin{equation}\label{eq:rigidconds}
+  R(t,u,\sigma)\equiv1\qquad\text{and}\qquad p=\rho\,\phi'=-\frac{A_1}{2A_2}=-\frac{t\,H_t}{2(1-u)H_u} ,
+\end{equation}
+the first by $\Disc=0\Leftrightarrow W=1\Leftrightarrow R=1$ through \eqref{eq:discfac}. These are two
+pointwise relations among the leaf variables and the momentum. The first, $R=1$, is one algebraic constraint
+on $(t,u,\sigma)$; the second slaves $\phi'$ to the leaf. Substituting both into the master-saturated
+constraint \eqref{eq:constraint} (with $\eps=0$) closes the system: it becomes a first-order autonomous ODE
+for the profile, tangent to the surface $\{R=1\}$, whose right-hand side is determined by
+\eqref{eq:rigidconds}. The GHS family \eqref{eq:ghs} satisfies both conditions of \eqref{eq:rigidconds} --- one
+checks $R\equiv1$ and $G=\rho\,\Hbr\equiv\tfrac12 r_p=M$ identically in $\rho$ along it --- so it is an
+integral curve; by uniqueness of solutions of the first-order system, it is the \emph{only} admissible one,
+and the asymptotic data $t\to1,u\to0,\sigma\to1$ single out the GHS trajectory with the given $(\rH,q)$.
 Thus $G$ is constant exactly on GHS, and equality holds only there. This completes the proof of
 Theorem~\ref{thm:main}.
 
@@ -605,7 +684,7 @@ For $M_9$ the coefficients are certified directly: with $\sigma=1+w$, $w>0$,
 \begin{equation}\label{eq:handelman}
    (1+t)^8\,M_9=\sum_{k=0}^{3}\Big(\,\sum_{i,j\ge0}c^{(k)}_{ij}\,t^{i}w^{j}\Big)\,B_{3,k}(u),\qquad c^{(k)}_{ij}\ge0,
 \end{equation}
-an identity in which every coefficient is nonnegative \cite{PowersReznick,Polya}; as $t,w>0$ and $B_{3,k}\ge0$,
+an identity in which every coefficient is nonnegative \cite{Handelman,PowersReznick,Polya}; as $t,w>0$ and $B_{3,k}\ge0$,
 it exhibits $M_9\ge0$ on $\mathcal D$ by inspection.
 
 For $B_9=b_0(1-u)^2+2b_1u(1-u)+b_2u^2$ each coefficient carries the physical variable $\sigma t$ through the
@@ -633,14 +712,19 @@ $\Hbr$, this certificate is manifestly polynomial: no radical, and hence no unif
 We have proved the spherically symmetric Einstein--Maxwell--dilaton Penrose inequality at $\alpha=1$
 (Theorem~\ref{thm:main}), the sharp Pythagorean bound $2M\ge\sqrt{\rH^2+2q^2}$ conjectured by Khuri, Weinstein
 and Yamada, with GHS rigidity. We have shown that the divergence-free hypothesis on the Maxwell field is
-necessary (Theorem~\ref{thm:nogo}), whereas the sub-extremality condition $\rH\ge q$ is redundant
+necessary (Proposition~\ref{thm:nogo}), whereas the sub-extremality condition $\rH\ge q$ is redundant
 (Proposition~\ref{prop:redundant}). The bound is proved twice, by two monotone masses of different algebraic
 type (the radical Hawking--Bray mass and the rational mass of Section~\ref{sec:rational}), so that each proof
 checks the other.
 
-For non-spherical data the analogous monotonicity is open and is pursued elsewhere; the current evidence is a
-convergent numerical flow with no violation down to $\rH/q=0.63$. The present paper settles the spherically
-symmetric case and removes the charge--horizon hypothesis from it.
+Two directions remain. For non-spherical data the analogous monotonicity is open; the current evidence is a
+convergent numerical flow with no violation down to $\rH/q=0.63$. For a general coupling $\alpha\ne1$, which
+Khuri, Weinstein and Yamada explicitly left for future work \cite{KWYext}, the leaf-by-leaf monotonicity used
+here is obstructed: the discriminant of Section~\ref{sec:disc} changes sign. A companion paper
+\cite{ItkinGeneralAlpha} bypasses that obstruction by treating the inequality variationally, and proves,
+uniformly in $\alpha$, that the GHS profile is a strict local minimiser of the mass; the passage from local to
+global there remains open, and for $\alpha=1$ it is exactly the content the present paper supplies. The
+present paper settles the spherically symmetric case and removes the charge--horizon hypothesis from it.
 
 \section*{Acknowledgements}
 The author thanks his advisors L.~P.~Horwitz and G.~Weinstein for posing the problem; the inequality proved
@@ -655,15 +739,23 @@ or animal subjects, data, or tissue.
 \section*{Data availability}
 The manuscript source and a machine-verifiable supplementary bundle (a \texttt{sympy} script that re-derives, in
 exact rational arithmetic, every algebraic claim of Section~\ref{sec:ratcert} and Appendix~\ref{app:sos},
-together with the polynomials $B_9,M_9$ and the Handelman certificate for $M_9$) are available at
-\url{https://github.com/YehudaItkin/spherical-emd-penrose}.
+together with the polynomials $B_9,M_9$ and the Handelman certificate for $M_9$) are available in the author's
+repository \url{https://github.com/YehudaItkin/spherical-emd-penrose} and will be archived with a
+persistent DOI (Zenodo) on submission.
 
-\begin{thebibliography}{32}
+\begin{thebibliography}{36}
 \bibitem{Penrose} Penrose R 1973 Naked singularities \emph{Ann. New York Acad. Sci.} \textbf{224} 125--134
 \bibitem{MisnerSharp} Misner C W and Sharp D H 1964 Relativistic equations for adiabatic, spherically
   symmetric gravitational collapse \emph{Phys. Rev.} \textbf{136} B571--B576
+\bibitem{Gibbons82} Gibbons G W 1982 Antigravitating black hole solitons with scalar hair in $N=4$
+  supergravity \emph{Nucl. Phys.} B \textbf{207} 337--349
 \bibitem{GibbonsMaeda} Gibbons G W and Maeda K 1988 Black holes and membranes in higher-dimensional
   theories with dilaton fields \emph{Nucl. Phys.} B \textbf{298} 741--775
+\bibitem{GKLTT} Gibbons G W, Kastor D, London L A J, Townsend P K and Traschen J 1994 Supersymmetric
+  self-gravitating solitons \emph{Nucl. Phys.} B \textbf{416} 850--880 (\emph{Preprint} arXiv:hep-th/9310118)
+\bibitem{ItkinGeneralAlpha} Itkin I 2026 The spherically symmetric Einstein--Maxwell--dilaton Penrose
+  inequality for a general coupling: strict local minimality of the GHS profile, uniform in $\alpha$
+  \emph{Preprint}
 \bibitem{GHS} Garfinkle D, Horowitz G T and Strominger A 1991 Charged black holes in string theory
   \emph{Phys. Rev.} D \textbf{43} 3140--3143 (Erratum 1992 \emph{Phys. Rev.} D \textbf{45} 3888)
 \bibitem{HuiskenIlmanen} Huisken G and Ilmanen T 2001 The inverse mean curvature flow and the Riemannian
@@ -678,7 +770,7 @@ together with the polynomials $B_9,M_9$ and the Handelman certificate for $M_9$)
   charge for multiple black holes \emph{J. Diff. Geom.} \textbf{106} 451--498
 \bibitem{McCormick} McCormick S 2020 On the charged Riemannian Penrose inequality with charged matter
   \emph{Class. Quantum Grav.} \textbf{37} 015007 (\emph{Preprint} arXiv:1907.07967)
-\bibitem{Kunduri} Kunduri H K, Margalef-Bentabol E and Muth J 2025 The Penrose inequality in spherical
+\bibitem{Kunduri} Kunduri H K, Margalef-Bentabol J and Muth S 2025 The Penrose inequality in spherical
   symmetry with charge and in Gauss--Bonnet gravity \emph{J. Math. Phys.} \textbf{66} 052502 (\emph{Preprint} arXiv:2409.07639)
 \bibitem{McCormickWeighted} McCormick S 2026 Mass, staticity, and a Riemannian Penrose inequality for
   weighted manifolds \emph{SIGMA} \textbf{22} 041 (\emph{Preprint} arXiv:2601.19875)
@@ -692,6 +784,8 @@ together with the polynomials $B_9,M_9$ and the Handelman certificate for $M_9$)
   \emph{Nucl. Phys.} B \textbf{887} 380--399 (\emph{Preprint} arXiv:1407.3355)
 \bibitem{MarsSimon} Mars M and Simon W 2002 On uniqueness of static Einstein--Maxwell--dilaton black
   holes \emph{Adv. Theor. Math. Phys.} \textbf{6} 279--305 (\emph{Preprint} arXiv:gr-qc/0105023)
+\bibitem{Handelman} Handelman D 1988 Representing polynomials by positive linear functions on compact convex
+  polyhedra \emph{Pacific J. Math.} \textbf{132} 35--62
 \bibitem{PowersReznick} Powers V and Reznick B 2000 Polynomials that are positive on an interval
   \emph{Trans. Am. Math. Soc.} \textbf{352} 4677--4692
 \bibitem{Polya} P\'olya G 1928 \"Uber positive Darstellung von Polynomen \emph{Vierteljschr. Naturforsch.
