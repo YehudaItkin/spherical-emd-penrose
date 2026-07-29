@@ -97,7 +97,7 @@ $2M\ge\sqrt{\rH^2+2q^2}$, with equality if and only if the data is GHS.
 
 The difficulty is that the sharp right-hand side is Pythagorean in $(\rH,q)$, whereas the classical routes to
 mass lower bounds in this setting (the Witten--Nester spinor identities \cite{Witten}, which give the positive
-mass theorem with charge $M\ge|q|/\sqrt2$ \cite{GKLTT,Nozawa,Rogatko,NozawaShiromizu}, and static uniqueness at $\alpha=1$
+mass theorem with charge $M\ge|q|/\sqrt2$ \cite{GKLTT,Nozawa,Rogatko,NozawaShiromizu}, and static black-hole uniqueness
 \cite{MarsSimon}) produce an \emph{additive} boundary term of the form $q/\sqrt2+\rH/2$. That additive term
 cannot reproduce $\sqrt{\rH^2+2q^2}$ except near equality (it exceeds it by a triangle-inequality defect),
 so these methods bound or rigidify the mass without yielding a Penrose inequality, and the sharp bound has
@@ -122,7 +122,7 @@ Einstein--Maxwell case $\alpha=0$: a charge screened from the horizon by a dista
 asymptotic charge without adding mass. It transcribes to EMD unchanged --- the dilaton weight cancels from the
 screening cost by Gauss's law --- so the following is McCormick's construction carried to $\alpha=1$.
 
-\begin{proposition}[Necessity of the source-free hypothesis; after McCormick \cite{McCormick}]\label{thm:nogo}
+\begin{proposition}[Necessity of the source-free hypothesis; after McCormick \cite{McCormick}]\label{prop:nogo}
 For every $\rH>0$ and every $q\neq0$ there is admissible static, spherically symmetric, DEC EMD datum,
 carrying an interior charge source, with outermost horizon of area radius $\rH$ and conserved charge $q$,
 whose ADM mass is arbitrarily close to $\rH/2$. Hence once $\operatorname{div}(e^{-2\phi}E)=0$ is dropped, no
@@ -165,7 +165,8 @@ $\alpha=1$ case. The present paper treats $\alpha=1$.
 \end{remark}
 
 For static EMD black holes the positive mass theorem with charge $M\ge|q|/\sqrt2$ (spinor methods
-\cite{Nozawa,Rogatko,NozawaShiromizu}) and static uniqueness at $\alpha=1$ \cite{MarsSimon} are known; as noted
+\cite{Nozawa,Rogatko,NozawaShiromizu}) and static black-hole uniqueness \cite[Theorem 1]{MarsSimon} --- proved
+at $\alpha=1$, and for every coupling when the magnetic or the electric field vanishes --- are known; as noted
 above, neither carries a horizon-area term, so neither is a Penrose inequality. The closest \emph{proven}
 Penrose inequalities in
 adjacent settings are the spherically symmetric charged case without dilaton (Einstein--Maxwell, and with a
@@ -188,7 +189,7 @@ uniqueness \cite{Weinstein,MarsSimon}. Against this background the sharp EMD bou
 appears to be new.
 
 The paper is organized as follows. Section~\ref{sec:setup} fixes the data and the GHS solution, and
-Section~\ref{sec:false} proves Proposition~\ref{thm:nogo}. Section~\ref{sec:outline} outlines the strategy for
+Section~\ref{sec:false} proves Proposition~\ref{prop:nogo}. Section~\ref{sec:outline} outlines the strategy for
 Theorem~\ref{thm:main}, which is carried out in Section~\ref{sec:mass}. Section~\ref{sec:redundant} proves
 Proposition~\ref{prop:redundant}, and Section~\ref{sec:rational} gives a second, independent proof via a
 rational mass.
@@ -202,9 +203,9 @@ used in the proof, and records the GHS solution that saturates the bound.
 
 We work with a static, spherically symmetric, time-symmetric initial data set for the EMD system at coupling
 $\alpha=1$. In area-radius gauge the spatial metric is
-\begin{equation}\label{eq:metric}
+\begin{equation*}
   g_3=\frac{\dd\rho^2}{1-\tfrac{2m(\rho)}{\rho}}+\rho^2\,\dd\Omega^2 ,
-\end{equation}
+\end{equation*}
 so $\rho$ is the areal radius, $\dd\Omega^2$ the unit round metric on $S^2$, and $m(\rho)$ the Misner--Sharp
 mass \cite{MisnerSharp}, characterized by $1-2m/\rho=|\nabla\rho|^2$. The ADM mass is $M=\lim_{\rho\to\infty}
 m(\rho)$; the conserved Maxwell charge is $q=\frac{1}{4\pi}\oint e^{-2\phi}\star F$, the same on every sphere by
@@ -233,9 +234,9 @@ $r$ with parameters $r_p>r_m>0$:
 \end{equation}
 Its horizon area radius is $\rH=\rho(r_p)=\sqrt{r_p(r_p-r_m)}$, so that
 $\rH^2+2q^2=r_p(r_p-r_m)+r_pr_m=r_p^2$, and therefore
-\begin{equation}\label{eq:ghs-sat}
+\begin{equation*}
   2M=r_p=\sqrt{\rH^2+2q^2}.
-\end{equation}
+\end{equation*}
 Thus GHS saturates the bound of Theorem~\ref{thm:main}, which is what makes the Pythagorean right-hand side the
 natural sharp form and GHS the expected equality case.
 
@@ -245,9 +246,9 @@ natural sharp form and GHS the expected equality case.
 
 Without the source-free hypothesis the bound of Theorem~\ref{thm:main} fails by an arbitrary factor: the mass
 can be driven down to the uncharged value $\rH/2$ while the charge $q$ is held fixed and made arbitrarily
-large. We prove Proposition~\ref{thm:nogo} by an explicit construction.
+large. We prove Proposition~\ref{prop:nogo} by an explicit construction.
 
-\begin{proof}[Proof of Proposition~\ref{thm:nogo}]
+\begin{proof}[Proof of Proposition~\ref{prop:nogo}]
 Carry the full charge $q$ on a thin dilatonic shell at radius $\rho_s$, with an uncharged interior minimal
 surface of area radius $\rH<\rho_s$. By Gauss' law the horizon then encloses no charge: it is a Schwarzschild
 horizon, and the Riemannian Penrose inequality $m\ge\rH/2$ \cite{HuiskenIlmanen,Bray} is saturated to leading
@@ -387,9 +388,9 @@ radial profiles $m(\rho),\phi(\rho)$.
 
 Since \eqref{eq:flow} is a quadratic in the momentum $p$ with a nonnegative $\eps$-term, monotonicity
 $\dd G/\dd\rho\ge0$ reduces to two statements:
-\begin{equation}\label{eq:psd}
+\begin{equation*}
   H_u>0\quad(\Rightarrow A_2=(1-u)H_u>0\text{ and }2H_u\eps\ge0),\qquad \Disc:=A_1^2-4A_2A_0\le0 .
-\end{equation}
+\end{equation*}
 
 \begin{lemma}[Monotonicity of $G$]\label{lem:psd}
 On the admissible range $t>0,\ u\in[0,1),\ \sigma\ge1$ one has $H_u>0$ and $\Disc\le0$, with $\Disc=0$
@@ -423,9 +424,9 @@ with $P$ the cofactor left after extracting $-(W-1)^2$. Since $(W-1)^2\ge0$, the
 equality if and only if $W=1$) is equivalent to $P>0$ on the admissible range, which we establish below. That
 $R\ge0$, so that $W$ is real, is itself transparent
 from the identity
-\begin{equation}\label{eq:Rpos}
+\begin{equation*}
   R\,(t^2+1)^2=t^2\Big[(t^2-1+2u)^2+4(1-u)(1+u)+(\sigma^2-1)(t^2+1)^2\Big],
-\end{equation}
+\end{equation*}
 whose bracket is a sum of three summands, each nonnegative on $0\le u\le1,\ \sigma\ge1$. It remains to certify
 $P>0$. A direct sum-of-squares argument is impossible: in the monomial basis $P$ has thousands of
 sign-indefinite coefficients, because $P$ still carries the radical $W=\sqrt R$. We remove it by uniformizing
@@ -441,14 +442,14 @@ $\xi\ge\xi_0$, where $\xi_0:=t+s$ and $s:=\sqrt{t^2+\kappa}>0$; the radicand
 $t^2[(t^2-1)^2+4+4u(t^2-1)]$ of $s$ is linear in $u$ and positive at both $u=0$ and $u=1$.
 
 Next we factor out the rigidity locus. In the $\xi$-chart the discriminant is the rational identity
-\begin{equation}\label{eq:discxi}
+\begin{equation*}
   \Disc=\frac{t^2\,(1-u)\,L^2\,C(t,u,\xi)}{8\,\xi^6\,(t^2+1)^{12}\,F_1F_2^2F_3^6},
   \qquad L=2\xi\,(W-1)\,(t^2+1)^2,
-\end{equation}
+\end{equation*}
 where
-\begin{equation}\label{eq:Fdef}
+\begin{equation*}
   F_1=-2\xi z\,(t^2+1)^2,\qquad F_2=2\xi W\,(t^2+1)^2,\qquad F_3=-2\xi(z+1)\,(t^2+1)^2.
-\end{equation}
+\end{equation*}
 The numerator minus $\Disc$ times the denominator vanishes identically; the factor $L^2\propto(W-1)^2$ is
 precisely what produced the $(W-1)^2$ of \eqref{eq:discfac}. On the physical region $z,W>0$ force
 $F_1<0$, $F_2>0$, $F_3<0$, so the denominator $8\xi^6(t^2+1)^{12}F_1F_2^2F_3^6<0$, and $L^2\ge0$ isolates the
@@ -475,7 +476,7 @@ and otherwise by a Sturm root-count (no real root in $(0,\infty)$, together with
 splitting the $t$-axis into the charts $\{0<t\le1\}$ and $\{t\ge1\}$ (the latter via $t\mapsto1/t$) so that
 each $b_j$ lies on a bounded interval.) Hence $P_k,Q_k\ge0$, so $C\ge0$ by
 \eqref{eq:Cexp}, and $\Disc\le0$ by \eqref{eq:signreduce}, with equality if and only if $W=1$, i.e.\ on GHS.
-This proves Lemma~\ref{lem:psd}. \qed
+This completes the proof of Lemma~\ref{lem:psd}.
 
 \medskip
 The certificate is exact throughout: the Bernstein reduction and each Sturm root-count \cite{BasuPollackRoy}
@@ -493,7 +494,7 @@ enters $C$ only through $z=\sigma t$, hence through $\xi$; the expansion \eqref{
 lives in $(t,u,\xi)$ on the half-line $\xi\ge\xi_0$ with no upper bound, so $\Disc\le0$ holds for all
 $\sigma\ge1$ at once. Likewise the horizon coefficient
 \begin{equation}\label{eq:A0end}
-  A_0\big|_{u=1}=\frac{(\sigma^2t^2-1)^2}{2\sigma(t^2+1)^2}\ \ge0\qquad(\text{all }\sigma)
+  A_0\big|_{u=1}=\frac{(\sigma^2t^2-1)^2}{2\sigma(t^2+1)^2}\ \ge0\qquad(\text{all }\sigma),
 \end{equation}
 is a manifest square, with no cap on $\sigma$. These facts are used in Section~\ref{sec:redundant}.
 
@@ -544,17 +545,41 @@ $\Disc=0$ and that the momentum sit at the double root, so along an equality pro
 \begin{equation}\label{eq:rigidconds}
   R(t,u,\sigma)\equiv1\qquad\text{and}\qquad p=\rho\,\phi'=-\frac{A_1}{2A_2}=-\frac{t\,H_t}{2(1-u)H_u} ,
 \end{equation}
-the first by $\Disc=0\Leftrightarrow W=1\Leftrightarrow R=1$ through \eqref{eq:discfac}. These are two
-pointwise relations among the leaf variables and the momentum. The first, $R=1$, is one algebraic constraint
-on $(t,u,\sigma)$; the second slaves $\phi'$ to the leaf. Substituting both into the master-saturated
-constraint \eqref{eq:constraint} (with $\eps=0$) closes the system: it becomes a first-order autonomous ODE
-for the profile, tangent to the surface $\{R=1\}$, whose right-hand side is determined by
-\eqref{eq:rigidconds}. The GHS family \eqref{eq:ghs} satisfies both conditions of \eqref{eq:rigidconds} --- one
-checks $R\equiv1$ and $G=\rho\,\Hbr\equiv\tfrac12 r_p=M$ identically in $\rho$ along it --- so it is an
-integral curve; by uniqueness of solutions of the first-order system, it is the \emph{only} admissible one,
-and the asymptotic data $t\to1,u\to0,\sigma\to1$ single out the GHS trajectory with the given $(\rH,q)$.
-Thus $G$ is constant exactly on GHS, and equality holds only there. This completes the proof of
-Theorem~\ref{thm:main}.
+the first by $\Disc=0\Leftrightarrow W=1\Leftrightarrow R=1$ through \eqref{eq:discfac}. Substituting both
+into the master-saturated constraint \eqref{eq:constraint} (with $\eps=0$) closes the system: with
+$q^2/\rho^2=(\sigma^2-1)/2$ and $\rho\,\dd/\dd\rho$ as the flow derivative, an equality profile solves the
+autonomous system
+\begin{equation}\label{eq:rigidode}
+  \rho\,\frac{\dd t}{\dd\rho}=t\,p,\qquad
+  \rho\,\frac{\dd u}{\dd\rho}=\frac{(\sigma^2-1)t^2}{2}+(1-u)\,p^2-u,\qquad
+  \rho\,\frac{\dd\sigma}{\dd\rho}=-\frac{\sigma^2-1}{\sigma},
+\end{equation}
+with $p$ given by \eqref{eq:rigidconds}. Two facts make this a genuine initial-value problem \emph{at the
+horizon}, where both $A_1$ and $A_2$ vanish.
+
+First, the slaved momentum extends analytically across $u=1$. By \eqref{eq:Hend} the value
+$\Hbr(t,1,\sigma)=\sigma/2$ does not depend on $t$, so $H_t$ vanishes identically on $\{u=1\}$ and factors as
+$H_t=(u-1)\,\mathcal N$ with $\mathcal N$ analytic there --- at $u=1$ one has $\kappa=0$, hence $R=z^2>0$ and $W+z=2\sigma t>0$,
+so $W=\sqrt R$ has no branch point. The factor $1-u$ therefore cancels, and
+\begin{equation}\label{eq:pana}
+  p=-\frac{t\,H_t}{2(1-u)H_u}=\frac{t\,\mathcal N}{2H_u},\qquad
+  p\big|_{u=1}=\frac{t\,H_{tu}}{2H_u}\bigg|_{u=1}=\frac{1-t^2}{1+t^2},
+\end{equation}
+a removable $0/0$. With $H_u|_{u=1}=t^2(\sigma^2+1)/\big(\sigma(t^2+1)^2\big)>0$, the right-hand side of
+\eqref{eq:rigidode} is analytic on a neighbourhood of the horizon point in $\{t>0,\ \sigma>1\}$.
+
+Second, the horizon data are \emph{determined by $(\rH,q)$ alone}. At $u=1$ the rigidity constraint reads
+$R=\sigma^2t^2=1$, so $\sigma t=1$: the horizon dilaton value, otherwise free, is pinned to
+\begin{equation*}
+  t_H=\frac{1}{\sigma_H},\qquad \sigma_H=\sqrt{1+2q^2/\rH^2},
+\end{equation*}
+and then \eqref{eq:pana} gives $p_H=(\sigma_H^2-1)/(\sigma_H^2+1)=q^2/(\rH^2+q^2)$. The GHS family
+\eqref{eq:ghs} satisfies all of this: $R\equiv1$ and $G=\rho\,\Hbr\equiv\tfrac12 r_p=M$ identically in
+$\rho$ along it, $t_H\sigma_H=1$ identically, and $p=r_m/(2r-r_m)$ agrees with \eqref{eq:pana}. Hence GHS is
+an integral curve of \eqref{eq:rigidode} through the point $(t,u,\sigma)=(1/\sigma_H,1,\sigma_H)$, and by
+Picard--Lindel\"of that orbit is the only one. An equality profile with horizon radius $\rH$ and charge $q$
+therefore coincides with it. Thus $G$ is constant exactly on GHS, and equality holds only there. This
+completes the proof of Theorem~\ref{thm:main}.
 
 \section{Redundancy of the sub-extremality hypothesis}\label{sec:redundant}
 
@@ -623,26 +648,26 @@ horizon $u=1$ and the GHS locus) with data fixed so that $G$ reproduces the GHS 
 rational function of $(t,u,\sigma)$, so no radical enters.
 
 The interpolation data comes from two quantities. The $u$-linear part of the radical mass $\Hbr$ is
-\begin{equation}\label{eq:gamma}
+\begin{equation*}
    \gamma=\frac{(t^2-1)^2+4ut^2}{2t(t^2+1)^2},
-\end{equation}
+\end{equation*}
 and the GHS locus is the zero set of $\mathcal P$, at which $u$ takes the value $u_G$:
-\begin{equation}\label{eq:locus}
+\begin{equation*}
    \mathcal P(t,u,\sigma)=4t^2(1-t^2)(1-u)-(t^2+1)^2(1-\sigma^2t^2),\qquad
    u_G=1-\frac{(t^2+1)^2(1-\sigma^2t^2)}{4t^2(1-t^2)}.
-\end{equation}
+\end{equation*}
 On the locus the mass must equal $\widehat m=\gamma|_{u=u_G}$ with prescribed $u$-slope $b$; together with an
 auxiliary rational function $k$ these are
-\begin{equation}\label{eq:kb}
+\begin{equation*}
    k=\frac{2t^2(\sigma+t)}{(t^2+1)^2(\sigma t+1)},\qquad b=\frac{t}{t^2+1}.
-\end{equation}
+\end{equation*}
 Hermite interpolation in $u$ (matching the horizon value $\tfrac\sigma2$ at $u=1$ and the locus data
 $(\widehat m,b)$ at $u=u_G$) gives a base interpolant $\widehat G_4$. A single rational correction completes it
 to the mass profile $\widehat G_9$, whose monotonicity is certified in Section~\ref{sec:ratcert}:
-\begin{equation}\label{eq:Ghat9}
+\begin{equation*}
    \widehat G_4=\tfrac\sigma2+(u-1)(2k-b)-(u-1)^2\,\frac{b-k}{1-u_G},\qquad
    \widehat G_9=\widehat G_4+\frac{2(b-k)^2}{b+k}\,\frac{(u-1)(u-u_G)^2}{(1-u_G)^2}.
-\end{equation}
+\end{equation*}
 The quasilocal mass is $G=\rho\,\max\!\big(\tfrac u2,\ \widehat G_9\big)$. On the complement of the active set
 $\mathcal A=\{\widehat G_9\ge u/2\}$ the branch $G=\rho u/2=m$ is monotone directly by \eqref{eq:constraint},
 and the maximum of two monotone functions is monotone.
@@ -652,17 +677,17 @@ and the maximum of two monotone functions is monotone.
 Write $\Delta_9$ for the discriminant of the flow quadratic \eqref{eq:flow} generated by $\widehat G_9$ (its
 explicit form is given in \eqref{eq:B9M9} below). The interpolant satisfies, identically in $(t,\sigma)$, the
 design identities
-\begin{equation}\label{eq:g9id}
+\begin{equation*}
    \widehat G_9(t,1,\sigma)=\tfrac\sigma2,\quad \widehat G_9|_{u=u_G}=\widehat m,\quad
    \partial_u\widehat G_9|_{u=u_G}=b,\quad \Delta_9|_{u=1}=0,\quad \Delta_9|_{u=u_G}=0,
-\end{equation}
+\end{equation*}
 together with $G\equiv m$ along the GHS slice (all verified directly). The horizon
 identity again gives $G(\rH)=\tfrac12\sqrt{\rH^2+2q^2}$, and the two vanishings of $\Delta_9$, at the horizon and
 on the locus, encode the double-root tangency that rigidity requires.
 
 \subsection{The rational certificate}\label{sec:ratcert}
 
-The flow identity \eqref{eq:flow} holds verbatim for any $F=F(t,u,\sigma)$, so on $\mathcal A$ one has
+The flow identity \eqref{eq:flow} holds verbatim for every $F=F(t,u,\sigma)$, so on $\mathcal A$ one has
 $\dd G/\dd\rho=A_2^{s}p^2+A_1^{s}p+A_0^{s}+2\beta_9\,\eps$ with $\beta_9=\partial_u\widehat G_9$,
 $A_2^{s}=(1-u)\beta_9$, and $\Delta_9=(A_1^{s})^2-4A_2^{s}A_0^{s}$. Writing $\operatorname{num}$ for the
 numerator over the common denominator (which is manifestly positive on $\mathcal D=\{t>0,0<u<1,\sigma>1\}$),
@@ -672,9 +697,9 @@ numerator over the common denominator (which is manifestly positive on $\mathcal
 with $\mathcal P$ the GHS-locus polynomial above, and $B_9$ ($57$ monomials, multidegree $(16,2,4)$ in
 $(t,u,\sigma)$) and $M_9$ ($472$ monomials, multidegree $(35,3,11)$) polynomials. Since $u-1<0$ and
 $\mathcal P^2\ge0$ on $\mathcal D$, the two monotonicity conditions reduce to the polynomial inequalities
-\begin{equation}\label{eq:B9M9pos}
+\begin{equation*}
    B_9\ge0\quad\text{and}\quad M_9\ge0\qquad\text{on }\mathcal D .
-\end{equation}
+\end{equation*}
 Both inequalities are low-degree in $u$ ($B_9$ is quadratic, $M_9$ cubic), so expanding each in the Bernstein
 basis $B_{n,k}(u)=\binom nk u^k(1-u)^{n-k}$ over $[0,1]$ leaves only its Bernstein coefficients, polynomials in
 $(t,\sigma)$; since $B_{n,k}\ge0$ on $[0,1]$, nonnegativity of every coefficient gives the inequality on
@@ -690,9 +715,9 @@ it exhibits $M_9\ge0$ on $\mathcal D$ by inspection.
 For $B_9=b_0(1-u)^2+2b_1u(1-u)+b_2u^2$ each coefficient carries the physical variable $\sigma t$ through the
 factor $(\sigma t+1)$ and completes a square in $\sigma$. The top one is a one-line certificate:
 $b_2=(t^2+1)^4(\sigma t+1)^2\,r_2$ with
-\begin{equation}\label{eq:r2sos}
+\begin{equation*}
    4C_2\,r_2=(2C_2\,\sigma+C_1)^2+28\,t^2(t^2-1)^2(t^2+1)^2,\qquad C_2=t^2\big((t^2-2)^2+7\big)>0,
-\end{equation}
+\end{equation*}
 so $r_2>0$ for every $\sigma$ (here $C_1=-4t(t^2-2t-1)(t^2+2t-1)$). The remaining coefficients are $b_0$ and
 $b_1=(t^2+1)^2(\sigma t+1)\,r_1$, where $r_1=b_1/[(t^2+1)^2(\sigma t+1)]$ is a polynomial in $(t,\sigma)$.
 Expanding each in $w=\sigma-1$ and writing the lowest, quadratic, parts as $c_0+c_1w+c_2w^2$ (for $r_1$) and
@@ -712,7 +737,7 @@ $\Hbr$, this certificate is manifestly polynomial: no radical, and hence no unif
 We have proved the spherically symmetric Einstein--Maxwell--dilaton Penrose inequality at $\alpha=1$
 (Theorem~\ref{thm:main}), the sharp Pythagorean bound $2M\ge\sqrt{\rH^2+2q^2}$ conjectured by Khuri, Weinstein
 and Yamada, with GHS rigidity. We have shown that the divergence-free hypothesis on the Maxwell field is
-necessary (Proposition~\ref{thm:nogo}), whereas the sub-extremality condition $\rH\ge q$ is redundant
+necessary (Proposition~\ref{prop:nogo}), whereas the sub-extremality condition $\rH\ge q$ is redundant
 (Proposition~\ref{prop:redundant}). The bound is proved twice, by two monotone masses of different algebraic
 type (the radical Hawking--Bray mass and the rational mass of Section~\ref{sec:rational}), so that each proof
 checks the other.
@@ -823,13 +848,13 @@ persistent DOI (Zenodo) on submission.
 
 Through \eqref{eq:discid}, the nonnegativity of $b_0$ and $b_1$ in Section~\ref{sec:ratcert} rests on the
 positivity for $t>0$ of the two univariate cofactors
-\begin{align}
-   p_{16}(t)&=3t^{16}-24t^{15}+36t^{14}+536t^{13}-2148t^{12}+3736t^{11}-1828t^{10}-3512t^{9}\notag\\
+\begin{align*}
+   p_{16}(t)&=3t^{16}-24t^{15}+36t^{14}+536t^{13}-2148t^{12}+3736t^{11}-1828t^{10}-3512t^{9}\\
    &\quad+9938t^{8}-9256t^{7}+5788t^{6}-2200t^{5}+2044t^{4}+424t^{3}-540t^{2}+56t+19,\\
-   p_{20}(t)&=2t^{20}-18t^{19}+17t^{18}+404t^{17}-1085t^{16}-856t^{15}+5444t^{14}+4032t^{13}-27688t^{12}\notag\\
-   &\quad+35508t^{11}-3266t^{10}-22936t^{9}+15170t^{8}+11240t^{7}-12492t^{6}+2336t^{5}\notag\\
+   p_{20}(t)&=2t^{20}-18t^{19}+17t^{18}+404t^{17}-1085t^{16}-856t^{15}+5444t^{14}+4032t^{13}-27688t^{12}\\
+   &\quad+35508t^{11}-3266t^{10}-22936t^{9}+15170t^{8}+11240t^{7}-12492t^{6}+2336t^{5}\\
    &\quad+3102t^{4}-562t^{3}-199t^{2}+36t+3.
-\end{align}
+\end{align*}
 The identities \eqref{eq:discid} need only that $p_{16}$ and $p_{20}$ be nonnegative for $t>0$, and in fact both
 are strictly positive there. By Sturm's theorem \cite{BasuPollackRoy}, neither $p_{16}$ nor $p_{20}$ has a root
 in $(0,\infty)$; since the values $p_{16}(1)=3072$ and $p_{20}(1)=8192$ are positive, each polynomial is positive
